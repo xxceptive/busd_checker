@@ -2,7 +2,7 @@ from web3 import Web3, HTTPProvider
 import json
 from datetime import datetime
 
-rpc = 'https://rpc.ankr.com/bsc'
+rpc = 'https://rpc.ankr.com/bsc'  # ТУТ МОЖНО ПОМЕНЯТЬ РПЦ
 
 start_time = datetime.now()
 
@@ -32,4 +32,4 @@ with open('wallets_with_balance.txt', 'w') as file:
 end_time = datetime.now()
 elapsed_time = end_time - start_time
 
-print(f'elapsed_time: {elapsed_time.seconds} seconds')
+print(f'elapsed time: {elapsed_time.seconds} seconds')
